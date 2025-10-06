@@ -1,0 +1,9 @@
+# Program to compute cumulative product of a list 
+numbers = [2, 3, 4, 5]
+cumulative_product = [0] * len(numbers)
+product = 1
+for i in range(len(numbers)):
+    product = product * numbers[i]
+    cumulative_product[i] = product  
+print("Original list:", numbers)
+print("Cumulative product:", cumulative_product)
